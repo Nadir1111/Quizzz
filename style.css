@@ -1,0 +1,183 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+*{
+    font-family: Roboto;
+}
+
+/* CODE */
+
+.wrapper{
+    background-image: url(./quiz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.holder{
+    background-color: #fff;
+    padding: 25px;
+}
+
+.holder_title{
+    font-size: 20px;
+    color: rgb(2, 2, 84);
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgb(2, 2, 84);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.holder_question{
+    font-size: 16px;
+    color: rgb(2, 2, 84);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.holder_variants{
+    margin-bottom: 50px;
+}
+
+.holder_variant{
+    border: 1px solid rgb(114, 112, 112);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+.holder_variant:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.holder_btn{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.holder_link{
+    color: #fff;
+    background-color: rgb(2, 2, 84);
+    padding: 10px 60px;
+    border-radius: 3px;
+}
+
+.holder_counter{
+    color: rgb(99, 98, 98);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 450;
+}
+
+*{
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 85%;
+    }
+}
+
+
